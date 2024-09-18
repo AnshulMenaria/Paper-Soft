@@ -1,0 +1,107 @@
+/* Container styles */
+.g-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  background-color: #f1f3f3;
+  padding: 1rem;
+}
+
+/* Form styles */
+.g-settings-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+}
+
+.g-settings-form h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #03256c;
+}
+
+/* Form group styles */
+.g-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.g-form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  padding: 0.75rem;
+  width: 100%;
+  color: #03256c;
+}
+
+/* Password input container */
+.g-password-input-container {
+  position: relative;
+}
+
+.g-form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Toggle password visibility icon */
+.g-toggle-password-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #03256c;
+  font-size: 1.2rem;
+}
+
+/* Button styles */
+.g-settings-button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 20px;
+  background-color: #03256c;
+  color: #f1f3f3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.g-settings-button:hover {
+  background-color: #06bee1;
+}
+
+/* Success and error message styles */
+.g-success { 
+  color: green;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.g-error {
+  color: red;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Responsive styling */
+@media (max-width: 480px) {
+  .g-settings-form {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+  .g-form-container {
+    padding: 0.5rem;
+  }
+}

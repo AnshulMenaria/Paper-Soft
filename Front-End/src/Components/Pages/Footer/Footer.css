@@ -1,0 +1,38 @@
+/* footer.css */
+
+footer {
+  background-color: #999c9c; /* Same background color as header */
+  color: #fff; /* Same text color as header */
+  padding: 1rem 2rem; /* Padding similar to header for consistency */
+  text-align: center; /* Center-align text */
+  box-shadow: 0 -4px 12px rgba(37, 37, 37, 0.15); /* Soft shadow for depth, inverted for bottom */
+  backdrop-filter: blur(10px); /* Glass effect for a modern look */
+  border-radius: 10px 10px 10px 10px; /* Rounded top corners */
+  width: 95.8%; /* Full width */
+
+  bottom: 0; /* Stick to the bottom */
+  z-index: 10; /* Ensures footer is above other content */
+}
+
+footer p {
+  margin: 0; /* Remove default margin */
+  font-size: 0.9rem; /* Font size similar to header */
+  font-weight: 500; /* Medium font weight for better readability */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+footer p:hover {
+  color: #fff; /* Text color stays white on hover for consistency */
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+  footer {
+    padding: 1rem; /* Adjust padding for smaller screens */
+    text-align: center; /* Ensure text stays centered */
+  }
+
+  footer p {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+}

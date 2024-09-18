@@ -1,0 +1,123 @@
+.admin-dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.admin-row-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.admin-info-cards {
+  flex: 1;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.admin-info-cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.admin-info-cards .admin-card-body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the content */
+  justify-content: center; /* Center align the content */
+}
+
+.admin-info-cards .admin-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2px;
+  color: #ffffff;
+}
+
+.admin-info-cards .admin-card-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #03256c; /* Changed text color */
+  background-color: #ffffff; /* White background behind text */
+  padding: 10px 20px; /* Added padding for spacing */
+  width: 100px; /* Set a fixed width for consistency */
+  border-radius: 20px; /* Added border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added slight shadow for depth */
+  margin-top: 15px;
+  display: flex;
+  align-items: center; /* Center align text within the box */
+  justify-content: center; /* Center align text within the box */
+}
+
+.admin-card-title1 {
+  margin-bottom: 30px;
+}
+
+.admin-rectangular-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 186px; /* Adjusted height */
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #ffffff;
+}
+
+.admin-color-1 {
+  background-color: #2541b2;
+}
+
+.admin-color-2 {
+  background-color: #2541b2;
+}
+
+.admin-color-3 {
+  background-color: #2541b2;
+}
+
+.admin-color-4 {
+  background-color: #03256c;
+}
+
+.admin-color-5 {
+  background-color: #03256c;
+}
+
+.admin-color-6 {
+  background-color: #03256c;
+}
+
+.admin-color-7 {
+  background-color: #03256c;
+}
+
+.admin-color-8 {
+  background-color: #03256c;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .admin-dashboard-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .admin-info-cards {
+    margin: 10px 0;
+  }
+}

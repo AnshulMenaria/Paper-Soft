@@ -1,0 +1,236 @@
+/* General container styling for letters list and cards */
+.g-letter-list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top for better alignment */
+  padding: 20px;
+  gap: 20px;
+  background-color: #f1f3f3; /* Match background color with LetterList.css */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow similar to LetterList.css */
+  border-radius: 8px; /* Rounded corners for a polished look */
+  margin-top: 10px; /* Added margin for spacing */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  /* height: calc(
+    100vh - 40px
+  );  */
+  overflow: hidden; /* Prevent scrolling the entire container */
+}
+
+/* Styling for the letters list */
+.g-letters-list {
+  flex: 2;
+  padding: 10px;
+  background-color: #f1f3f3; /* Ensure background consistency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  border-radius: 8px; /* Slightly round the corners */
+  transition: transform 0.3s ease; /* Add smooth transition for hover effects */
+  max-height: calc(100vh - 270px); /* Set maximum height to fit the viewport */
+  overflow-y: auto; /* Enable vertical scrolling for the list */
+}
+
+.h3Content {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-top: 0px;
+}
+
+.g-letters-list:hover {
+  transform: scale(1.01); /* Slightly scale up on hover for effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Styling for the list header */
+.g-letters-list-header,
+.g-letters-list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 6px solid #dee2e6; /* Style similar to LetterList.css */
+}
+
+.g-letters-list-header {
+  background-color: #1768ac; /* Change background color to match LetterList.css */
+  color: #fff; /* White text for better contrast */
+  font-weight: bold;
+  padding: 12px; /* Adjust padding for consistency */
+  border-radius: 8px; /* Rounded corners for headers */
+}
+
+.g-letters-list-item {
+  background-color: #f1f3f3; /* Maintain background consistency */
+  border-radius: 8px; /* Rounded corners for items */
+  margin-bottom: 10px; /* Spacing between items */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.g-letters-list-item:nth-child(even) {
+  background-color: #f9f9f9; /* Subtle contrast for even rows */
+}
+
+.g-letters-list-item:hover {
+  background-color: #ddd; /* Hover effect */
+  transform: scale(1.01); /* Slightly scale up on hover for effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+}
+
+.g-header-item,
+.g-item-title,
+.g-item-category,
+.g-item-date,
+.g-item-file {
+  flex: 1;
+  text-align: center;
+  overflow: hidden; /* Ensures cells don't overflow */
+  max-width: 200px; /* Adjust max-width as needed */
+}
+
+.g-item-file button {
+  padding: 8px 12px; /* Adjust padding for consistency */
+  cursor: pointer;
+  background-color: #2541b2; /* Consistent button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow to buttons */
+}
+
+.g-item-file button:hover {
+  background-color: #1b3580; /* Slightly darker shade for hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Right column for cards */
+.g-right-column {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  background-color: #f1f3f3; /* Match background color with main container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  max-height: calc(100vh - 80px); /* Match the height of the letters list */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  padding-top: 35px;
+  height: 542px;
+}
+
+/* Card styling */
+.g-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px; /* Added margin for consistent spacing */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.g-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.g-card .card-body {
+  text-align: center;
+}
+
+.g-card .g-card-title {
+  font-size: 1.4em; /* Slightly larger for emphasis */
+  margin-bottom: 10px;
+  color: #fff; /* Consistent color theme */
+}
+
+.g-card .g-card-text {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff; /* Match the button color */
+}
+
+/* Specific card colors */
+.color-9,
+.color-10,
+.color-11 {
+  background-color: #03256c;
+  color: white;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent shadow */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  height: 105px;
+}
+
+.color-9:hover,
+.color-10:hover,
+.color-11:hover {
+  background-color: #2541b2; /* Slightly different color on hover */
+}
+
+/* List inside cards */
+.g-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.g-card ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.g-card ul li button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #1c65db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.g-card ul li button:hover {
+  background-color: #1b3580; /* Darker shade on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .g-letters-list-header,
+  .g-letters-list-item {
+    display: block;
+    width: 100%;
+  }
+
+  .g-letters-list-header {
+    display: none;
+  }
+
+  .g-letters-list-item {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f1f3f3; /* Match the background color */
+    border-radius: 8px; /* Rounded corners */
+  }
+
+  .g-letters-list-item > div {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .g-letters-list-item > div::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: calc(50% - 20px);
+    padding-right: 10px;
+    text-align: left;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}

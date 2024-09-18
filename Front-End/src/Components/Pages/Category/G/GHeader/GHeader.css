@@ -1,0 +1,90 @@
+.g-navbar {
+  background-color: #999c9c;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+.g-navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.g-logo img {
+  height: 50px;
+  margin-right: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.g-logo img:hover {
+  transform: scale(1.1);
+}
+
+.g-navbar-menu {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  justify-content: flex-start;
+}
+
+.g-navbar-item {
+  position: relative;
+  margin-right: 2rem;
+}
+
+.g-navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease,
+    text-decoration 0.3s ease;
+}
+
+.g-navbar-link:hover {
+  color: #2541b2;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.g-logout-button {
+  background-color: #2541b2;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.g-logout-button:hover {
+  background-color: #1768ac;
+  color: #fff;
+  transform: translateY(-4px);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .g-navbar-container {
+    flex-direction: column;
+  }
+
+  .g-navbar-menu {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .g-logout-button {
+    margin-top: 1rem;
+  }
+}

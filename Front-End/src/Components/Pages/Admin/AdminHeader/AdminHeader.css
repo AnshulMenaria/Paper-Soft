@@ -1,0 +1,89 @@
+.admin-navbar {
+  background-color: #999c9c;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  backdrop-filter: blur(10px); /* Glass effect for a modern look */
+  border-radius: 10px; /* Slightly rounded corners */
+}
+
+.admin-navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.admin-logo img {
+  height: 50px;
+  margin-right: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.admin-logo img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.admin-navbar-menu {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  justify-content: flex-start; /* Align items to the start */
+}
+
+.admin-navbar-item {
+  position: relative;
+  margin-right: 2rem; /* Increased margin to add more space between links */
+}
+
+.admin-navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem; /* Slightly larger font */
+  font-weight: 500;
+  padding: 0.5rem 0.5rem; /* Reduced padding for tighter spacing */
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease,
+    text-decoration 0.3s ease;
+}
+
+.admin-navbar-link:hover {
+  color: #2541b2; /* Cyan text on hover */
+  background-color: transparent; /* Remove background color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.admin-logout-button {
+  background-color: #2541b2; /* Button background color */
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.admin-logout-button:hover {
+  background-color: #1768ac; /* Apply the color #1768AC on hover */
+  transform: translateY(-4px); /* Slight lift on hover */
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+  .admin-navbar-container {
+    flex-direction: column;
+  }
+
+  .admin-navbar-menu {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .admin-logout-button {
+    margin-top: 1rem;
+  }
+}

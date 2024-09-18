@@ -1,0 +1,123 @@
+.he-dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.he-row-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.he-info-cards {
+  flex: 1;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.he-info-cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.he-info-cards .he-card-body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the content */
+  justify-content: center; /* Center align the content */
+}
+
+.he-info-cards .he-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2px;
+  color: #ffffff;
+}
+
+.he-info-cards .he-card-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #03256c; /* Changed text color */
+  background-color: #ffffff; /* White background behind text */
+  padding: 10px 20px; /* Added padding for spacing */
+  width: 100px; /* Set a fixed width for consistency */
+  border-radius: 20px; /* Added border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added slight shadow for depth */
+  margin-top: 15px;
+  display: flex;
+  align-items: center; /* Center align text within the box */
+  justify-content: center; /* Center align text within the box */
+}
+
+.he-card-title1 {
+  margin-bottom: 30px;
+}
+
+.he-rectangular-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 186px; /* Adjusted height */
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #ffffff;
+}
+
+.he-color-1 {
+  background-color: #2541b2;
+}
+
+.he-color-2 {
+  background-color: #2541b2;
+}
+
+.he-color-3 {
+  background-color: #2541b2;
+}
+
+.he-color-9 {
+  background-color: #03256c;
+}
+
+.he-color-10 {
+  background-color: #03256c;
+}
+
+.he-color-11 {
+  background-color: #03256c;
+}
+
+.he-color-12 {
+  background-color: #03256c;
+}
+
+.he-color-13 {
+  background-color: #03256c;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .he-dashboard-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .he-info-cards {
+    margin: 10px 0;
+  }
+}

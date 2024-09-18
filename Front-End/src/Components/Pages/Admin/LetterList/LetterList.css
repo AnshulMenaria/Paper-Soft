@@ -1,0 +1,139 @@
+.admin-letterlist-container {
+  padding: 20px;
+  background-color: #f1f3f3; /* Set background color of the entire list */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a more formal look */
+  border-radius: 8px; /* Slightly round the corners for a polished look */
+}
+
+/* Row styling */
+.admin-letterlist-row {
+  margin-bottom: 20px;
+}
+
+/* Dropdown select styling */
+.admin-letterlist-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.admin-letterlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0.9, 0.9, 0.9, 0.2); /* Add shadow to the table */
+  border-radius: 20px; /* Slightly round the corners */
+  overflow: hidden; /* Ensure rounded corners are visible */
+}
+
+/* Table header styling */
+.admin-letterlist-header {
+  background-color: #2541b2; /* Change background color of all list headers */
+  color: rgb(255, 255, 255); /* Set header text color to white for better contrast */
+  padding: 12px;
+  text-align: left;
+  text-align: center;
+}
+
+/* Table row styling with hover effect */
+.admin-letterlist-row-hover {
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.admin-letterlist-row-hover:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+  transform: scale(1.01); /* Slightly scale up the row on hover for effect */
+}
+
+/* Table cell styling */
+.admin-letterlist-cell {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 6px solid #dee2e6;
+  background-color: #f1f3f3;
+  text-align: center;
+  overflow: hidden; /* Ensures cells don't overflow */
+  max-width: 200px; /* Adjust max-width as needed */
+}
+
+/* Description cell styling for overflow scroll */
+.admin-letterlist-description {
+  max-height: 100px; /* Set max height for description cell */
+  overflow-y: auto; /* Enable vertical scroll for overflow content */
+  white-space: pre-line; /* Preserve line breaks for better readability */
+}
+
+/* Button styling */
+.admin-letterlist-button {
+  padding: 8px 12px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+/* View button styling */
+.admin-letterlist-view-button {
+  background-color: #2541b2; /* Change background color of the view button */
+}
+
+/* Disabled button styling */
+.admin-letterlist-button:disabled {
+  color: #808080;
+  background-color: transparent;
+  border: 2px solid;
+  border-color: #808080;
+}
+
+/* Button hover effect */
+.admin-letterlist-button:hover:not(:disabled) {
+  background-color: #1b3580; /* Slightly darker shade for hover effect */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .admin-letterlist-table,
+  .admin-letterlist-header,
+  .admin-letterlist-row-hover,
+  .admin-letterlist-cell {
+    display: block;
+    width: 100%;
+  }
+
+  .admin-letterlist-header-row {
+    display: none;
+  }
+
+  .admin-letterlist-row-hover {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a more formal look */
+  }
+
+  .admin-letterlist-cell {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .admin-letterlist-cell::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: calc(50% - 20px);
+    padding-right: 10px;
+    text-align: left;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}
