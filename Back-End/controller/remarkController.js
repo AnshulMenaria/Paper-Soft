@@ -12,7 +12,15 @@ const remarkController = {
       res.status(500).json({ error: "Server error.", serverError: error });
     }
   },
-
+  async get(req, res, next) {
+    try {
+      const remarks = await remarkModel.find();
+      res.status(200).json(remarks);
+    } catch (error) {
+      console.error("Error fetching remarks:", error);
+      res.status(500).json({ error: "Server error.", serverError: error });
+    }
+  },
   async store(req, res, next) {
     try {
       const { designation, remark, letterId } = req.body;

@@ -42,6 +42,7 @@ router.get("/register/:email", registerController.getUserByEmail);
 
 // Remark routes
 router.post("/remark", remarkController.store);
+router.get("/remark", remarkController.get);
 router.get("/remark/:letterId", remarkController.index);
 router.delete("/remark/:id", verifyToken, remarkController.delete);
 router.put("/remark/:id", verifyToken, remarkController.update);

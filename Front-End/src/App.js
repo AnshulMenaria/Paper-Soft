@@ -34,10 +34,12 @@ import QHome from "./Components/Pages/Category/Q/QHome/QHome";
 import QLetterList from "./Components/Pages/Category/Q/QLetterList/QLetterList";
 import QLetterView from "./Components/Pages/Category/Q/QLetterView/QLetterView";
 import QSetting from "./Components/Pages/Category/Q/QSetting/QSetting";
+import RemarkNotifier from "./Components/context/RemarkNotifier";
 
 function App() {
   return (
     <BrowserRouter>
+    <RemarkNotifier/>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
